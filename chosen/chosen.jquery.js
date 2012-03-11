@@ -741,7 +741,7 @@ Copyright (c) 2011 by Harvest
             found = false;
             result_id = option.dom_id;
             result = $("#" + result_id);
-            if (regex.test(option.html)) {
+            if (regex.test(option.html) || regex.test(option.value)) {
               found = true;
               results += 1;
             } else if (option.html.indexOf(" ") >= 0 || option.html.indexOf("[") === 0) {
